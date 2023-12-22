@@ -1,0 +1,28 @@
+<%- include('header.ejs') -%>
+
+<div class="cardbox">
+
+
+    
+        <div class="carddescription">
+        <ul>
+        <li>Name: <%=cards.name%></li>
+        <li>Element: <%=cards.element%></li>
+        <li>Level: <%=cards.level%> </li>
+        <li>Value north: <%=cards.value_north%></li>
+        <li>Value east: <%=cards.value_east%> </li>
+        <li>Value south: <%=cards.value_south%> </li>
+        <li>Value west: <%=cards.value_west%> </li>
+        </ul>
+        </div>
+
+        <div class="cardimage">
+       <img class="cimage" src="/visuals/<%= cards.visual_name%>" alt="">
+        </div>
+
+</div>
+
+
+
+
+<%- include('footer.ejs') -%>
